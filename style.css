@@ -1,0 +1,25 @@
+/*
+Amreet - this is the css file for Mixed.
+*/
+
+.header {
+  color:darkgreen;
+}
+
+.header h1::after{
+  content: "🍹"
+}
+
+.select-ingredient {
+  color: green;
+}
+
+input[type] {
+  color: green;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: green;
+  color:white;
+}
