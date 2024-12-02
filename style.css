@@ -11,13 +11,12 @@ body{
   text-align: center;
   font-size: 20px;
   margin-bottom: 40px;
+  position: fixed;
 }
 
 .header h1::after{
   content: "🍹"
 }
-
-
 
 
 .select-ingredient {
