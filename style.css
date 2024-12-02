@@ -1,39 +1,73 @@
 /*
 Amreet - this is the css file for Mixed.
 */
-body{
+body {
   background-color: #EAF4F4;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
-  color:darkgreen;
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 40px;
-  position: fixed;
+.container {
+  width: 80vw; /* Width is 80% of the viewport */
+  height: 100vh; /* Height is 90% of the viewport height */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+  position: relative; /* This makes it the reference point for absolute elements inside it */
+  box-sizing: border-box;
+  background-color: white; /* Light background color for visibility */
 }
 
-.header h1::after{
+.header {
+  color: darkgreen;
+  text-align: center;
+  font-size: 20px;
+  position: relative; /* Reference point for absolute positioning */
+  margin-bottom: 20px;
+}
+
+.header h1::after {
   content: "🍹"
 }
 
-
 .select-ingredient {
-  background-color: #bdf0df;
-  border-radius: 10px;
-  padding: 10px;
-  width: 40%;
-  height: 30%;
-
+  color: green;
+  text-align: center;
+  background-color: white;
+  padding: 20px; /* Padding to keep the content inside */
+  width: 100%; /* Make sure it fills the width of its container */
+  height: 60%; /* Let the height fill the container's height */
+  position: relative; /* Allows absolute positioning of child elements inside it */
+  box-sizing: border-box;
+  display: block;
 }
 
-input[type] {
+.select-ingredient p, .select-ingredient label {
+  margin: 10px 0;
+}
+
+input[type="button"] {
   color: green;
   border-radius: 5px;
+  margin: 10px;
+  padding: 10px 20px; /* Added padding to make the button more clickable */
+  background-color: lightgreen;
+  border: none;
+  cursor: pointer;
 }
 
 .button:hover {
   background-color: green;
-  color:white;
+  color: white;
+}
+
+.image {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+}
+
+.image img {
+  border-radius: 20px;
+  max-width: 100%; /* Ensure image doesn't exceed its container width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 200px; /* Limit the height of the image to avoid overflow */
 }
