@@ -8,7 +8,7 @@ body {
 
 .container {
   width: 80vw; /* Width is 80% of the viewport */
-  height: 100vh; /* Height is 90% of the viewport height */
+  height: 90vh; /* Height is 90% of the viewport height */
   margin: 0 auto; /* Center the container horizontally */
   padding: 20px;
   position: relative; /* This makes it the reference point for absolute elements inside it */
@@ -31,7 +31,7 @@ body {
 .select-ingredient {
   color: green;
   text-align: center;
-  background-color: white;
+  background-color: black;
   padding: 20px; /* Padding to keep the content inside */
   width: 100%; /* Make sure it fills the width of its container */
   height: 60%; /* Let the height fill the container's height */
@@ -40,9 +40,6 @@ body {
   display: block;
 }
 
-.select-ingredient p, .select-ingredient label {
-  margin: 10px 0;
-}
 
 input[type="button"] {
   color: green;
@@ -50,8 +47,7 @@ input[type="button"] {
   margin: 10px;
   padding: 10px 20px; /* Added padding to make the button more clickable */
   background-color: lightgreen;
-  border: none;
-  cursor: pointer;
+
 }
 
 .button:hover {
