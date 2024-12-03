@@ -10,7 +10,7 @@ body {
   background-color: yellowgreen;
   position: relative;
   height: 90vh;
-
+  overflow: auto; /* Allow scrolling if content overflows */
 }
 
 .header {
@@ -27,20 +27,14 @@ body {
   text-align: center;
   background-color: black;
   padding: 20px;
-  position: relative;
+  position: relative; /* Ensure the image is positioned relative to this container */
   margin: 10px;
-  height: 50%;
-  overflow: hidden;
-
+  height: 60%;
+  overflow: scroll; /* Prevent image from overflowing */
 }
 
 .select-ingredient img{
-  position: relative; /* Absolute positioning for the image */
-  bottom: -10px; /* Adjust position as needed */
-  left: 10px; /* Horizontally center the image */
-  max-width: 100%; /* Ensure the image doesn't exceed the container's width */
-  max-height: 100%; /* Ensure the image doesn't exceed the container's height */
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 input[type="button"] {
@@ -49,7 +43,6 @@ input[type="button"] {
   margin: 10px;
   padding: 10px 20px;
   background-color: lightgreen;
-
 }
 
 .button:hover {
