@@ -4,12 +4,16 @@ Amreet - this is the css file for Mixed.
 body {
   background-color: #EAF4F4;
   font-family: "Electrolize", sans-serif;
+  background-image: url('photo.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .container {
   position: relative;
-  height: 90vh;
-  overflow: auto; /* Allow scrolling if content overflows */
+  height: 80vh;
 }
 
 .header {
@@ -24,14 +28,24 @@ body {
 
 .select-ingredient {
   color: black;
-  text-shadow: 0.2px 0.2px 0.3px #000000;
+  background-color: rgba(224, 247, 230, 0.5);
   text-align: center;
   border-radius: 10px;
   padding: 40px;
-  background-image: url('photo.jpg'); /* Replace with the actual path to your image */
-  background-size: cover; /* Ensure the image covers the entire viewport */
-  background-position: center center; /* Center the image */
-  background-attachment: fixed;
+  text-shadow: 1px 1px 1px black;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.select-ingredient select {
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+}
+.select-ingredient select:hover {
+  border-color: green; /* Highlight border on hover */
 }
 
 input[type="button"] {
@@ -40,8 +54,9 @@ input[type="button"] {
   margin: 10px;
   padding: 10px 20px;
   background-color: lightgreen;
-  transition: 0.3s;
+  transition: all 0.3s ease;
   cursor: pointer;
+  border: none;
 }
 
 .button:hover {
