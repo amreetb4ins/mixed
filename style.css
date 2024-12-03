@@ -16,6 +16,12 @@ body {
 .header {
   color: darkgreen;
   text-align: center;
+  transition: 0.3s;
+}
+
+.header:hover {
+  font-size: 22px;
+
 }
 
 .header h1::after {
@@ -43,6 +49,8 @@ input[type="button"] {
   margin: 10px;
   padding: 10px 20px;
   background-color: lightgreen;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .button:hover {
