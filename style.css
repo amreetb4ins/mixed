@@ -7,7 +7,6 @@ body {
 }
 
 .container {
-  background-color: #EAF4F4;
   position: relative;
   height: 90vh;
   overflow: auto; /* Allow scrolling if content overflows */
@@ -24,23 +23,15 @@ body {
 }
 
 .select-ingredient {
-  color: green;
+  color: black;
+  text-shadow: 0.2px 0.2px 0.3px #000000;
   text-align: center;
-  background-color: #EAF4F4;
   border-radius: 10px;
-  padding: 60px;
-  position: relative; /* Ensure the image is positioned relative to this container */
-  margin: 10px;
-  overflow: scroll; /* Prevent image from overflowing */
-  transition: background-color 0.3s ease;
-
-}
-
-.select-ingredient:hover{
-  background-color: #DDF9C1;
-}
-.select-ingredient img{
-  border-radius: 10px;
+  padding: 40px;
+  background-image: url('photo.jpg'); /* Replace with the actual path to your image */
+  background-size: cover; /* Ensure the image covers the entire viewport */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed;
 }
 
 input[type="button"] {
