@@ -9,16 +9,21 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  margin: 0;
+  height: 100vh;
+  display: block;
 }
 
 .container {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
   position: relative;
-  height: 80vh;
+
 }
 
 .header {
   color: darkgreen;
-  text-align: center;
   font-size: 40px;
 }
 
@@ -32,7 +37,7 @@ body {
   text-align: center;
   border-radius: 10px;
   padding: 40px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   width: 80%;
 
 }
@@ -62,4 +67,17 @@ input[type="button"] {
 .button:hover {
   background-color: green;
   color: white;
+}
+
+.cocktails{
+  color: black;
+  background-color: rgba(224, 247, 230, 0.5);
+  text-align: center;
+  border-radius: 10px;
+  padding: 40px;
+  margin: 0 auto;
+  width: 80%;
+  display: none;
+  margin-bottom: 20px;
+
 }
