@@ -28,7 +28,7 @@ function displayCocktails(data) {
   if (data.drinks) {
     // Limit to 10 random cocktails
     const limitedCocktails = getRandomCocktails(data.drinks, 10);
-    cocktailsDiv.innerHTML = "<h6>Here are your cocktails:</h6>";
+    cocktailsDiv.innerHTML = "<h4> Try these cocktails!</h4>";
 
     limitedCocktails.forEach(cocktail => {
       const cocktailElement = document.createElement("p");
@@ -36,7 +36,7 @@ function displayCocktails(data) {
       cocktailsDiv.appendChild(cocktailElement);
     });
   } else {
-    cocktailsDiv.innerHTML = "<p>No cocktails found for this ingredient.</p>";
+    cocktailsDiv.innerHTML = "<h4> Try these cocktails!</h4>";
   }
 }
 
